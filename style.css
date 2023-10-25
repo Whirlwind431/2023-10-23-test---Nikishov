@@ -1,0 +1,229 @@
+
+/* Basic css  */
+body {
+    font-family: otherFont;
+    color: white
+}
+
+.myFormDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img {
+    width: 150px;
+}
+
+
+
+.myHeader {
+    text-align: center;
+}
+
+.myHeader2 {
+    text-align: center;
+}
+
+
+.popup {
+    font-family: otherFont;
+
+}
+
+.myFormDiv {
+    font-family: myFontForm;
+}
+
+label:hover {
+    color: rgb(123, 155, 125);
+    cursor: auto;
+}
+
+label,
+input,
+option {
+    font-size: larger;
+}
+
+.myHeader:hover {
+    color: rgb(123, 155, 125);
+}
+
+.myTable,
+td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    font-family: myFontTable;
+    box-shadow: 3px 3px 3px rgb(191, 195, 199);
+
+}
+
+
+
+
+th {
+    border: 1px solid black;
+
+}
+
+.myInput {
+    width: 300px;
+    box-shadow: 4px 4px 4px rgba(81, 102, 12, 0.658);
+}
+
+
+
+.msgError {
+    color: rgb(223, 223, 37)
+}
+
+body {
+    background-image: url(./Assets/img/4.jpg);
+    background-size: cover;
+}
+
+
+
+/* ------------------------------------- */
+/* toast css */
+/* The SIMPLE-TOAST - position it at the bottom and in the middle of the screen */
+#simpleToast {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: min-content;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: MediumVioletRed;
+    /* Background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 2px;
+    /* Rounded borders */
+    padding: 16px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+    font-family: monospace;
+    display: inline-flex;
+}
+
+
+/* The SIMPLE-TOAST - position it at the bottom and in the middle of the screen */
+#simpleToast {
+    visibility: hidden;
+    /* Hidden by default. Visible on click */
+    min-width: min-content;
+    /* Set a default minimum width */
+    margin-left: -125px;
+    /* Divide value of min-width by 2 */
+    background-color: rgb(140, 151, 141);
+    /* Background color */
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Centered text */
+    border-radius: 20px;
+    /* Rounded borders */
+    padding: 15px;
+    /* Padding */
+    position: fixed;
+    /* Sit on top of the screen */
+    z-index: 1;
+    /* Add a z-index if needed */
+    left: 50%;
+    /* Center the snackbar */
+    bottom: 30px;
+    /* 30px from the bottom */
+    font-family: monospace;
+    display: inline-flex;
+}
+
+
+/* Show the SIMPLE-TOAST when clicking on a button (class added with JavaScript) */
+#simpleToast.show {
+    visibility: visible;
+    /* Show the SIMPLE-TOAST */
+    /* Add animation: Take 0.5 seconds to fade in and out the SIMPLE-TOAST.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    box-shadow: 5px 5px 5px rgb(71, 66, 66);
+}
+
+/* Animations to fade the SIMPLE-TOAST in and out */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+/* ------------------------------------------ */
+
+/* fonts */
+@font-face {
+    font-family: myFontForm;
+    src: url(./Assets/fonts/MetalRocker.ttf);
+}
+
+@font-face {
+    font-family: myFontTable;
+    src: url(./Assets/fonts/Scary\ House.ttf);
+}
+
+@font-face {
+    font-family: otherFont;
+    src: url(./Assets/fonts/Scary\ Zombie.ttf);
+}
